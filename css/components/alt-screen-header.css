@@ -1,19 +1,38 @@
 .alt-header {
-    padding: var(--horizontal-space);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
-}
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
 
+    height: 45px;
+    background-color: white;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+}
+.alt-header__chat-screen {
+    background-color: #abc1d1;
+}
+.alt-header__column {
+    width: 33%;
+}
 .alt-header__title {
     font-size: 28px;
     font-weight: 600;
 }
-
 .alt-header__column:first-child {
     margin-right: auto;
 }
+.alt-header__column:nth-child(2) {
+    text-align: center;
+}
 .alt-header__column:last-child {
     margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
 }
+.alt-header__column span:last-child {
+    margin-left: 25px;
+}
+

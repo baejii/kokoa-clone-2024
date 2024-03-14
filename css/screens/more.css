@@ -1,3 +1,8 @@
+.more-screen__icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .more-screen .icon-row {
     margin-top: 35px;
 }
@@ -8,6 +13,7 @@
 }
 .more-suggestions__title {
     margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .more-suggestions__icons {
@@ -29,10 +35,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
-
 .more-suggestions__icon-image i {
     font-size: 32px;
     color: white;
+}
+.more-suggestions__icon-text {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.more-screen__setting-dot {
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    font-weight: 600;
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
 }
