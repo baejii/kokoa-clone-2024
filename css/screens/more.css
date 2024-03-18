@@ -1,9 +1,9 @@
 .more-screen__icons {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0px 20px;
 }
-.more-screen .icon-row {
+.more-screen .icon-column {
     margin-top: 35px;
 }
 .more-suggestions {
@@ -18,6 +18,7 @@
 
 .more-suggestions__icons {
     display: flex;
+    margin: 0 8px;
 }
 
 .more-suggestions__icon {
