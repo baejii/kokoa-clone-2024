@@ -1,6 +1,7 @@
 #chat-screen {
     background-color: #abc1d1;
-    height: 500vh;
+    height: 200vh;
+    position: relative;
 }
 .main-chat {
     margin-top: 100px;
@@ -70,9 +71,13 @@
     flex-direction: row-reverse;
 }
 
-.reply {
+.chat-footer {
+    width: 100%;
     position: fixed;
-    bottom: 100;
+    bottom: 0;
+}
+
+.reply {
     width: 100%;
     background-color: white;
     display: flex;
@@ -127,49 +132,37 @@
 }
 
 .keyboard {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #d1d5d9;
     width: 100%;
-    height: 23.8%;
-    padding: 10px 0;
+    background-color: #D1D4D9;
 }
 .keyboard__row {
+    padding: 6px 0px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 15px;
+    margin: 0px 20px;
 }
-.keyboard__row:first-child {
-    margin-top: 5px;
+.keyboard__row:nth-child(2) {
+    margin: 0px 50px;
 }
 .keyboard__row button {
+    width: 60px;
+    height: 65px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
-    width: 50px;
-    height: 57px;
-    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: white;
+    border: none;
 }
-.keyboard__row:nth-child(2) {
-    margin: 0 46px;
+.keyboard__row .keyboard__btn-icon {
+    width: 90px;
 }
-.keyboard__row:nth-child(3) .keyboard__btn,
-.keyboard__row:nth-child(4) .keyboard__btn {
-    font-size: 32px;
-    width: 78px;
+.keyboard__row .keyboard__btn-num {
+    width: 120px;
+    font-size: 30px;
 }
-.keyboard__row:nth-child(4) button{
-    width: 100px;
-    font-size: 25px;
-}
-.keyboard__row:nth-child(4) .keyboard__num {
-    width: 78px;
-}
-.keyboard__row:nth-child(4) .keyboard__font {
-    width: 215px;
+.keyboard__row .keyboard__btn-font {
+    font-size: 30px;
+    width: 245px;
 }
